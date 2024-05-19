@@ -11,9 +11,14 @@
 
 
 body {
-    font-family: var(--f-1);
     margin:0;
-    color: var(--c-n-3);
+    background-color: var(--c-p-1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6.4%;
 }
 
 * {
@@ -45,4 +50,51 @@ body {
 .body-s--bold 
 {
     font-weight: bold;
+}
+
+
+
+/*Layout*/ 
+
+.c {
+    max-width: 384px;
+    background-color: var(--c-n-1);
+    border-radius: 20px;
+    padding: 1.5em;
+    font-family: var(--f-1);
+    color: var(--c-n-3);
+    line-height: 1.5;
+    border:solid 1px var(--c-n-3);
+    box-shadow: 8px 8px 0px var(--c-n-3);
+}
+
+
+
+.c__img-main {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.c__tag {
+    background-color: var(--c-p-1);
+    width: fit-content;
+    padding: .28em .85em;
+    border-radius: 4px;
+}
+
+.c__footer {
+    display: flex;
+    align-items: center;
+    gap: .75em;
+}
+
+.c__img-avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.c__name {
+    margin-top: 0;
 }
